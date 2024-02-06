@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page</title>
+    <script src="lorenzo.js"></script>
+    <link rel="stylesheet" type="text/css" href="lorenzo.css">
+</head>
+<body>
+
+<h1 id="header">Dit is een Header</h1>
+<p id="paragraph">Dit is een paragraph</p>
+
+<button onclick="myFunction()">Display Date</button>
+<button onclick="colorIt(document.getElementById('paragraph'), 'blue')">Color Text Blue</button>
+<button onclick="changeText('paragraph', 'New Text Here')">Change Text</button>
+
+<div id="hoverDiv" onmouseover="hoverIt('hoverDiv', 'yellow')" onmouseout="hoverIt('hoverDiv', 'white')">
+    Maak mij anders
+</div>
+
+</body>
+</html>
