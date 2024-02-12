@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Web Page</title>
     <script src="lorenzo.js"></script>
-    <link rel="stylesheet" type="text/css" href="lorenzo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Project</title>
+  <link rel="stylesheet" href="lorenzo.css">
 </head>
 <body>
+  <input type="text" onchange="colorIt(this)" placeholder="Als je hier typt, word ik anders...">
 
-<h1 id="header">Dit is een Header</h1>
-<p id="paragraph">Dit is een paragraph</p>
+  <p><button onclick="myFunction();">Klik mij</button></p>
 
-<button onclick="myFunction()">Display Date</button>
-<button onclick="colorIt(document.getElementById('paragraph'), 'blue')">Color Text Blue</button>
-<button onclick="changeText('paragraph', 'New Text Here')">Change Text</button>
+  <p><button onclick="changeText('info', 'Lorenzo');">Vertel mijn naam</button></p>
+  <p id="info">Wat is jouw naam?</p>
 
-<div id="hoverDiv" onmouseover="hoverIt('hoverDiv', 'yellow')" onmouseout="hoverIt('hoverDiv', 'white')">
-    Maak mij anders
-</div>
+  <div id="blokje" onmouseout="hoverIt();">Maak mij anders!</div>
 
+  <script src="lorenzo.js"></script>
 </body>
 </html>
